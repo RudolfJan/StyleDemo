@@ -1,0 +1,39 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:library="clr-namespace:Styles.Library">
+
+  <!-- https://stackoverflow.com/questions/14383400/how-to-store-fontfamily-as-a-staticresource -->
+  <!-- Default font -->
+
+  <FontFamily x:Key="FontFamilyDefault">Consolas, Arial</FontFamily>
+  <FontFamily x:Key="FontFamilyTextBlock">Calibri</FontFamily>
+  <FontFamily x:Key="FontFamilyTextBox">Calibri</FontFamily>
+
+<!-- https://stackoverflow.com/questions/5907020/how-to-set-fontsize-in-pt-if-we-use-staticresource-or-dynamicresource -->
+
+  <!-- FontSize -->
+  <library:FontSize Size="20pt" x:Key="FontSizeDefault"/>
+  <library:FontSize Size="16pt" x:Key="FontSizeTextBlock"/>
+  <library:FontSize Size="16pt" x:Key="FontSizeTextBox"/>
+
+ <!-- FontWeight -->
+  <FontWeight x:Key="FontWeightDefault">Black</FontWeight>
+  <FontWeight x:Key="FontWeightTextBlock">Normal</FontWeight>
+  <FontWeight x:Key="FontWeightTextBox">Normal</FontWeight>
+
+  <!-- FontStyle -->
+  <FontStyle x:Key="FontStyleDefault">Italic</FontStyle>
+  <FontStyle x:Key="FontStyleTextBlock">Italic</FontStyle>
+  <FontStyle x:Key="FontStyleTextBox">Normal</FontStyle>
+
+<!-- https://www.manongdao.com/q-204646.html -->
+
+  <Style x:Key="TextBlockUnderlined">
+    <Setter Property="TextBlock.TextDecorations" Value="Underline" />
+  </Style>
+
+  <Style x:Key="TextBoxUnderlined">
+    <Setter Property="TextBox.TextDecorations" Value="Underline" />
+  </Style>
+
+</ResourceDictionary>

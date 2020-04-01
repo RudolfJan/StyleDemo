@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <!--  Window style  -->
+
+
+  <FontFamily x:Key="MainFont">WingDings</FontFamily>
+
+  <Style x:Key="WindowDefault" TargetType="Window">
+    <Setter Property="Background" Value="{DynamicResource WindowBackground}" />
+    <Setter Property="FontFamily" Value="{DynamicResource FontFamilyDefault}"></Setter>
+    <Setter Property="FontWeight" Value="{DynamicResource FontWeightDefault}"></Setter>
+    <Setter Property="FontStyle" Value="{DynamicResource FontStyleDefault}"></Setter>
+  </Style>
+</ResourceDictionary>

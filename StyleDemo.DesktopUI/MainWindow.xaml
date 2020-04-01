@@ -3,10 +3,26 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:StyleDemo.DesktopUI"
         mc:Ignorable="d"
+        Style="{StaticResource WindowDefault}"
+        
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <StackPanel>
+        <Button Background="{StaticResource ButtonBackground}" 
+                Foreground="{StaticResource ButtonText}"
+                Width="{StaticResource ButtonDefaultWidth}"
+                Height="{StaticResource ButtonDefaultHeight}"
+                Margin="{StaticResource MarginDefault}"
+                Padding="{StaticResource PaddingDefault}">Test button</Button>
+      <WrapPanel>
+      <Button Style="{StaticResource ButtonDefault}">Using style</Button>
+        <Button Style="{StaticResource ButtonDefault}">Using style</Button>
+        <Button Style="{StaticResource ButtonDefault}">Using style</Button>
+        <Button Style="{StaticResource ButtonDefault}">Using style</Button>
+      </WrapPanel>
+      <WrapPanel>
+            <TextBlock Style="{StaticResource TextBlockDefault}">text block testing</TextBlock>
+            <TextBox>TextBox demo input</TextBox>
+      </WrapPanel>
+    </StackPanel> 
 </Window>
