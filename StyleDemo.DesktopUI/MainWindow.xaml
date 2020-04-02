@@ -18,11 +18,12 @@
       <Button Style="{StaticResource ButtonDefault}">Using style</Button>
         <Button Style="{StaticResource ButtonDefault}">Using style</Button>
         <Button Style="{StaticResource ButtonDefault}">Using style</Button>
-        <Button Style="{StaticResource ButtonDefault}">Using style</Button>
+        <Button Style="{StaticResource ButtonDefault}" IsEnabled="False">Disabled button</Button>
       </WrapPanel>
       <WrapPanel>
-            <TextBlock Style="{StaticResource TextBlockDefault}">text block testing</TextBlock>
+            <TextBlock Style="{StaticResource TextBlockDefault}" MinWidth="140">text block testing</TextBlock>
             <TextBox>TextBox demo input</TextBox>
+        <TextBlock Style="{StaticResource TextBlockDefault}" FontSize="15pt">text block font size override</TextBlock>
       </WrapPanel>
     </StackPanel> 
 </Window>

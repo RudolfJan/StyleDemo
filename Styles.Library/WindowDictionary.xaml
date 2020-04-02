@@ -3,13 +3,10 @@
 
   <!--  Window style  -->
 
-
-  <FontFamily x:Key="MainFont">WingDings</FontFamily>
-
   <Style x:Key="WindowDefault" TargetType="Window">
     <Setter Property="Background" Value="{DynamicResource WindowBackground}" />
-    <Setter Property="FontFamily" Value="{DynamicResource FontFamilyDefault}"></Setter>
-    <Setter Property="FontWeight" Value="{DynamicResource FontWeightDefault}"></Setter>
-    <Setter Property="FontStyle" Value="{DynamicResource FontStyleDefault}"></Setter>
+    <Setter Property="FontFamily" Value="{DynamicResource FontFamilyDefault}"/>
+    <Setter Property="FontWeight" Value="{DynamicResource FontWeightDefault}"/>
+    <Setter Property="FontStyle" Value="{DynamicResource FontStyleDefault}"/>
   </Style>
 </ResourceDictionary>
